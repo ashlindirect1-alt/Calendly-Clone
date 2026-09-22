@@ -1,0 +1,211 @@
+/* ===============================
+   CONFIRMATION PAGE
+================================ */
+
+.confirmation-container {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f8fafc;
+}
+
+.confirmation-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 45px;
+    text-align: center;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.confirmation-card h1 {
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.confirmation-text {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.booking-id {
+    padding: 12px;
+    margin-bottom: 25px;
+    background: #f3f4f6;
+    border-radius: 8px;
+}
+
+.booking-id p {
+    margin: 0;
+    color: #374151;
+}
+
+
+/* ===============================
+   EMAIL CONFIRMATION
+================================ */
+
+.email-confirmation {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 22px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.email-confirmation h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #111827;
+}
+
+.email-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 14px;
+    word-break: break-word;
+}
+
+.email-row strong {
+    color: #374151;
+}
+
+.email-row span {
+    color: #4b5563;
+}
+
+.email-message {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.email-message strong {
+    color: #374151;
+}
+
+.email-message p {
+    margin-top: 8px;
+    color: #4b5563;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+
+/* ===============================
+   BUTTON
+================================ */
+
+.confirmation-card .primary-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #006bff;
+    color: white;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.confirmation-card .primary-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width: 800px) {
+
+    .confirmation-container {
+        padding: 35px 20px;
+    }
+
+    .confirmation-card {
+        max-width: 550px;
+        padding: 35px 30px;
+    }
+
+}
+
+
+/* ===============================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+    .confirmation-container {
+        min-height: auto;
+        padding: 30px 15px;
+    }
+
+    .confirmation-card {
+        padding: 28px 18px;
+        border-radius: 12px;
+    }
+
+    .success-icon {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+
+    .confirmation-card h1 {
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .confirmation-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .booking-id {
+        padding: 11px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .email-confirmation {
+        padding: 17px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .email-confirmation h2 {
+        font-size: 18px;
+        margin-bottom: 17px;
+    }
+
+    .email-row {
+        flex-direction: column;
+        gap: 3px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .email-message p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .confirmation-card .primary-btn {
+        width: 100%;
+        padding: 12px 18px;
+        text-align: center;
+    }
+
+}

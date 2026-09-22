@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Meeting - Calendly Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Calendly<span>Clone</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Log In</a>
+        <a href="signup.html" class="signup-btn">
+            Sign Up
+        </a>
+    </nav>
+
+</header>
+
+
+<main class="booking-container">
+
+    <section class="booking-card">
+
+        <div class="booking-intro">
+
+            <h1>Book a Meeting</h1>
+
+            <p>
+                Choose a date and time that works for you.
+            </p>
+
+        </div>
+
+
+        <!-- Date -->
+
+        <div class="booking-section">
+
+            <h2>1. Select a Date</h2>
+
+            <label for="bookingDate">
+                Date
+            </label>
+
+            <input
+                type="date"
+                id="bookingDate"
+            >
+
+        </div>
+
+
+        <!-- Time -->
+
+        <div class="booking-section">
+
+            <h2>2. Select a Time</h2>
+
+            <div id="timeSlots" class="time-slots">
+
+                <p class="booking-message">
+                    Select a date to see available times.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Guest information -->
+
+        <div
+            class="booking-section"
+            id="guestSection"
+            style="display: none;"
+        >
+
+            <h2>3. Your Information</h2>
+
+            <form id="bookingForm">
+
+                <label for="guestName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="guestName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="guestEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="guestEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <div class="selected-time">
+
+                    Selected time:
+
+                    <strong id="selectedTime">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-btn"
+                >
+                    Confirm Meeting
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <p id="bookingMessage"></p>
+
+    </section>
+
+</main>
+
+
+<script src="js/booking.js"></script>
+
+</body>
+
+</html>

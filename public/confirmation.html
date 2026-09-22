@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Booking Confirmed - Calendly Clone</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/confirmation.css"
+    >
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        Calendly<span>Clone</span>
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="booking.html">
+            Book Another Meeting
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="confirmation-container">
+
+    <div class="confirmation-card">
+
+        <div class="success-icon">
+            ✅
+        </div>
+
+        <h1>
+            Meeting Confirmed!
+        </h1>
+
+        <p class="confirmation-text">
+            Your meeting has been successfully booked.
+        </p>
+
+        <div class="booking-id">
+
+            <p>
+                Booking ID:
+                <strong id="bookingId">N/A</strong>
+            </p>
+
+        </div>
+
+
+        <!-- Confirmation Email -->
+
+        <div
+            id="emailConfirmation"
+            class="email-confirmation"
+        >
+
+            <h2>
+                📧 Confirmation Email
+            </h2>
+
+            <div class="email-row">
+
+                <strong>
+                    To:
+                </strong>
+
+                <span id="emailTo">
+                    Loading...
+                </span>
+
+            </div>
+
+
+            <div class="email-row">
+
+                <strong>
+                    Subject:
+                </strong>
+
+                <span id="emailSubject">
+                    Loading...
+                </span>
+
+            </div>
+
+
+            <div class="email-message">
+
+                <strong>
+                    Message:
+                </strong>
+
+                <p id="emailMessage">
+                    Loading...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="index.html"
+            class="primary-btn"
+        >
+            Back to Home
+        </a>
+
+    </div>
+
+</main>
+
+
+<script src="js/confirmation.js"></script>
+
+</body>
+
+</html>

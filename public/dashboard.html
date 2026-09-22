@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Calendly Clone</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Calendly<span>Clone</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="availability.html">
+                Availability
+            </a>
+
+            <button id="logoutBtn" class="logout-btn">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Dashboard -->
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+
+            <div>
+                <h1>
+                    Welcome, <span id="userName">User</span> 👋
+                </h1>
+
+                <p>
+                    Manage your schedule and meetings from one place.
+                </p>
+            </div>
+
+            <a href="booking.html" class="primary-btn">
+                Book a Meeting
+            </a>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📅
+                </div>
+
+                <div>
+                    <h3 id="upcomingCount">0</h3>
+                    <p>Upcoming Meetings</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🕐
+                </div>
+
+                <div>
+                    <h3 id="pastCount">0</h3>
+                    <p>Past Meetings</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⚙️
+                </div>
+
+                <div>
+                    <h3>Manage</h3>
+                    <p>Your Availability</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Upcoming Meetings -->
+
+        <section class="meetings-section">
+
+            <div class="section-header">
+
+                <h2>Upcoming Meetings</h2>
+
+                <a href="booking.html">
+                    + New Meeting
+                </a>
+
+            </div>
+
+            <div id="upcomingMeetings" class="meetings-list">
+
+                <div class="empty-message">
+                    No upcoming meetings.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Past Meetings -->
+
+        <section class="meetings-section">
+
+            <div class="section-header">
+
+                <h2>Past Meetings</h2>
+
+            </div>
+
+            <div id="pastMeetings" class="meetings-list">
+
+                <div class="empty-message">
+                    No past meetings.
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="meetings-section">
+
+            <div class="section-header">
+                <h2>
+                    Notifications
+                    <span id="notificationCount" class="notification-count">0</span>
+                </h2>
+            </div>
+
+            <div id="notificationsList" class="meetings-list">
+
+                <div class="empty-message">
+                   No notifications.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
